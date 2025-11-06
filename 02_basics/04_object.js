@@ -65,5 +65,30 @@ users[1].email
 // console.log(tinderUser.hasOwnProperty('isLogged')); // the key or value is there -> false
 
 
-/** Object se-structure and Json api */
+/** Object de-structure and Json api */
+//de-structure
+const course = {
+    coursename: "Javascript",
+    price: "1",
+    courseInstructor: "disha"
+}
+
+// const {courseInstructor} = course // can call objetct like this
+// console.log(courseInstructor); // disha
+
+const {courseInstructor: instructor} = course // object de-structure
+console.log(instructor); // calling the instructor only ->  disha
+
+// const navbar = () => {
+
+// }
+
+// navbar(company = "disha")
+
+//JSON format api
+// {
+//     "name": "disha",
+//     "coursename": "javascript",
+//     "price": "free"
+// }
 
