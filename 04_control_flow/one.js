@@ -5,12 +5,38 @@ const temperature = 50
 //     console.log("Executed");
     
 // }
-if( temperature < 50){
-    console.log("Less than 50");
+// if( temperature < 50){
+//     console.log("Less than 50");
+// }
+// if( temperature === 50 ){
+//         console.log("Equal to 50");
+// }
+// else{
+//     console.log("temperature is greater than 50");
+// }
+
+// const score = 200
+
+// if( score > 100 ) {
+//     const power = "fly"
+//     console.log(`User Power: ${power}`);
+// }
+
+// console.log(`User Power: ${power}`);
+
+const balance = 1000
+/**Implicit Scope */
+// if( balance > 500) console.log("TEST"), console.log("test2");
+
+if( balance < 500){
+    console.log("Less than 500");
 }
-if( temperature == 50 ){
-        console.log("Equal to 50");
+else if( balance < 750){
+    console.log("Less than 750");
+}
+else if( balance < 900){
+    console.log("Less than 900");
 }
 else{
-    console.log("temperature is greater than 50");
+    console.log("Less than 1200");
 }
