@@ -7,7 +7,7 @@ function two(){
     three()
 }
 function three(){
-    console.-("three");
+    console.log("three");
 }
 one()
 two()

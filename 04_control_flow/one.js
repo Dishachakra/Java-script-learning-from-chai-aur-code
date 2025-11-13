@@ -28,15 +28,37 @@ const balance = 1000
 /**Implicit Scope */
 // if( balance > 500) console.log("TEST"), console.log("test2");
 
-if( balance < 500){
-    console.log("Less than 500");
-}
-else if( balance < 750){
-    console.log("Less than 750");
-}
-else if( balance < 900){
-    console.log("Less than 900");
-}
+// if( balance < 500){
+//     console.log("Less than 500");
+// }
+// else if( balance < 750){
+//     console.log("Less than 750");
+// }
+// else if( balance < 900){
+//     console.log("Less than 900");
+// }
+// else{
+//     console.log("Less than 1200");
+// }
+
+const UserloggedIn = true
+const debitCard =true
+const loggedInFromGoogle = false
+const loggedInFromEmail = true
+
+ if( UserloggedIn && debitCard ){
+    console.log("Allowed to purchase");
+    console.log("User Logged In");
+ }
+ else if(!debitCard){
+    console.log("Allow the debit card");
+        
+ }
 else{
-    console.log("Less than 1200");
+    console.log("Not allowed");
+    
+}
+
+if( loggedInFromGoogle || loggedInFromEmail ){
+    console.log("User Logged in");
 }
